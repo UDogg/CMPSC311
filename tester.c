@@ -33,12 +33,12 @@ int main(int argc, char *argv[])
   int score = 0;
 
   score += test_mount_unmount();
-  //score += test_read_before_mount();
-  //score += test_read_invalid_parameters();
-  //score += test_read_within_block();
-  //score += test_read_across_blocks();
-  //score += test_read_three_blocks();
-  //score += test_read_across_disks();
+  score += test_read_before_mount();
+  score += test_read_invalid_parameters();
+  score += test_read_within_block();
+  score += test_read_across_blocks();
+  score += test_read_three_blocks();
+  score += test_read_across_disks();
 
   printf("Total score: %d/%d\n", score, 10);
 
